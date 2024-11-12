@@ -1,0 +1,21 @@
+/* styling for image cards main container */
+
+.imageCardContainer {
+  margin: 90px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  
+}
+
+
+/* styling for mobile */
+
+@media only screen and (max-width:800px) {
+  .imageCardContainer{
+    margin: 10px;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+  
+}

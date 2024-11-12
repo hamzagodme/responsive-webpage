@@ -1,0 +1,35 @@
+/* Styling for Searchbar Container */
+.searchBar {
+  padding-top: 90px;
+  padding-left: 20px; /* Adjust padding */
+  padding-right: 20px;
+  width: 100%; /* Full width */
+  max-width: 800px; /* Optional: To limit the width of the search bar */
+  margin: 0 auto; /* Center the search bar horizontally */
+  display: flex; /* Use Flexbox */
+  align-items: center; /* Vertically center items in the container */
+  box-sizing: border-box; /* Include padding in width calculation */
+  flex-direction: row; /* Default to row (input + button in a line) */
+}
+
+.searchInput {
+  height: 30px;
+  width: auto; /* Adjust width based on content */
+  flex-grow: 1; /* Ensure it takes up available space */
+  padding: 0 10px; /* Add padding for input text */
+  box-sizing: border-box; /* Prevent overflow */
+}
+
+
+/* Media Query for smaller screens */
+@media screen and (max-width: 800px) {
+  .searchBar {
+    padding-left: 10px; /* Adjust padding for smaller screens */
+    flex-direction: column; /* Stack elements vertically */
+    align-items: stretch; /* Stretch items to full width */
+  }
+  .searchInput {
+    width: 100%; /* Ensure the input takes full width in column layout */
+    margin-bottom: 10px; /* Add margin between input and button */
+  }
+}

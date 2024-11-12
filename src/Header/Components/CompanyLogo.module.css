@@ -1,0 +1,16 @@
+/* Company Logo Container */
+.companyLogoContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+/* styling for company logo */
+
+/* styling for company name */
+.companyName {
+  color: darkmagenta;
+  font-size: 20px;
+  padding-left: 30px;
+  font-family: sans-serif;
+}
+

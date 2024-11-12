@@ -1,0 +1,29 @@
+/* styling for Mainbody */
+.mainBodyContainer {
+  position: relative;
+  min-height: 40vh; /* Flexible height */
+  background-image: url("./src/assets/heropic.avif");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+  width: 100%;
+}
+
+.bodyContent {
+  padding-left: 20px;
+  width: auto; /* Let flexbox handle width */
+}
+
+@media screen and (max-width: 800px) {
+  .mainBodyContainer {
+    flex-direction: column; /* Stack vertically */
+  }
+  .bodyContent {
+    width: 100%; /* Full width for smaller screens */
+    padding-left: 0; /* Adjust padding */
+  }
+}
