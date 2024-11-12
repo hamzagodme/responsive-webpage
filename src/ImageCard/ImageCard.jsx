@@ -8,15 +8,15 @@ import CardActionArea from "@mui/material/CardActionArea";
 
 export const ImageCard = () => {
   const cardImages = [
-    { pic: "/src/assets/Billboard.avif" },
-    { pic: "/src/assets/screen displays.avif" },
-    { pic: "/src/assets/social media.avif" },
+    { id:1,pic: "/src/assets/Billboard.avif" },
+    { id:2,pic: "/src/assets/screen displays.avif" },
+    { id:3,pic: "/src/assets/social media.avif" },
   ];
 
   return (
     <div className={styles.imageCardContainer}>
       {cardImages.map((cardImage) => (
-        <Card sx={{ width: 300 }}>
+        <Card sx={{ width: 300 }} key={cardImage.id}>
           <CardActionArea>
             <CardMedia
               component="img"
