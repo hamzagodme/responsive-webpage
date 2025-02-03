@@ -1,4 +1,4 @@
-# Static Web page with responsive web design for mobile screens
+# static web page with responsive web design for mobile screens
 
 ## Description
 This project is part of the Mission Ready L-5 program. It is designed to help students get started with the basics of software development.
